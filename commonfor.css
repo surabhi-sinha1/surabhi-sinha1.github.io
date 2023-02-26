@@ -1,0 +1,103 @@
+h1{
+    color:blue;
+    background-color: chartreuse;
+    font-size: 5.5ch;
+    text-align: center;
+    text-shadow: 2px 4px 4px rgb(77, 174, 244);
+    
+}
+h2{
+    color:rgb(255, 72, 0);
+    background-color: rgb(232, 232, 22);
+    font-size: 4.5ch;
+    text-align: center;
+    text-shadow: 2px 4px 4px gray;
+}
+h3{
+    color:rgb(255, 0, 85);
+    background-color: rgba(236, 102, 189, 0.848);
+    font-size: 3.8ch;
+    text-align: center;} 
+    bod{
+        font-size: 24px;
+    } 
+   
+* {
+    box-sizing: border-box;
+} 
+
+/*body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px auto;
+}
+
+.next {
+    position: absolute;
+    box-sizing: content-box;
+    box-shadow: darkgreen;
+    box-sizing: border-box;
+}*/
+
+
+/* CSS */
+.next {
+  appearance: button;
+  background-color: #043617;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #ade21c;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.next:focus:not(:focus-visible),
+.next:focus {
+  outline: 0;
+}
+
+.next:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+.next:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.next:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.next:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.next:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}

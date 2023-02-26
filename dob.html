@@ -1,0 +1,56 @@
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\surab\Desktop\webpage project\commonfor.css">
+
+    
+<script>
+function age()
+{
+var a=document.getElementById("dobb").value;
+var b=new Date(a);
+var c=Date.now() - b.getTime();
+var month=new Date(c);
+var year=month.getFullYear();
+var mon=month.getMonth()+1;
+
+
+var age=Math.abs(year-1970);
+document.getElementById("result").value="Your Age is: "+age+" years ";
+document.getElementById("result").style.backgroundColor="yellow";
+}
+
+
+</script>
+
+<style>
+    body{
+        background-image: url("https://media.istockphoto.com/id/1169630303/photo/blue-textured-background.jpg?b=1&s=170667a&w=0&k=20&c=tI2xFhXqXFqMM0IvxSYY3F7LIwv450h2ch3yD-lZ9HU=");
+        width: 100%;
+        height: 100%;
+    font-size: 50%;
+    position: fixed;
+ bottom: 50%;}
+        .sub{
+            padding: 2px;
+            background-color: dodgerblue;
+            color:chartreuse;
+            font-weight: bolder;
+            border-color:blue;
+            min-height:30px; 
+    min-width: 120px;
+
+        }
+        
+
+        
+</style>
+
+</head>
+<body>
+    <center>
+<h1>DATE OF BIRTH</h1><input type="date" class="dob" id="dobb">
+<input type="button" class="sub" value="Submit" onclick="age()"></center><br><center>
+<input type="text" id="result" size="20px"></center>
+</body>
+</html>

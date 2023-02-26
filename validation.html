@@ -1,0 +1,205 @@
+<HTML>
+<head>
+<script>
+function checkname()
+{
+var a=document.registration.username.value;
+var b=document.registration.mail.value;
+var c=document.registration.pass.value;
+var d=document.registration.pass2.value;
+var e=document.registration.phone.value;
+var f=document.registration.date.value;
+var g=document.registration.month.value;
+var h=document.registration.year.value;
+var i=document.registration.loc.value;
+
+if(a=="")
+{
+alert("Please Enter Your Name");
+return false;
+}
+if(b==""||c==""||d==""||e==""||f==""||g==""||h==""||i=="")
+{
+alert("Please fill all the fields");
+return false;
+}
+if(!isNaN(a))
+{
+alert("Username can only be Characters");
+return true;
+}
+if ((a.length < 5) || (a.length > 15))
+{
+alert("Your Character must be 5 to 15 Character");
+return false;}
+
+if((c.length<6))
+{
+alert("Password must contain atleast 6 characters");
+}
+
+if(c!=d)
+{
+alert("Password does not match ");
+}
+
+if (isNaN(e))
+{
+alert("Enter Numeric value only");
+return false; 
+}
+else if((e.length==10));
+else
+{
+alert("Enter 10 digit phone number only");
+return false; }
+}
+</script>
+<style>
+body{
+    font-size: 24px;
+    padding: 2px;
+    font-weight: bold;
+
+}
+.sign{
+    
+  padding: 10px;
+  border: 5px solid rgb(15, 14, 14);
+  margin: 0;
+  box-shadow: 2px;
+
+}
+
+</style>
+
+</head>
+
+<body bgcolor="grey">
+<h2><center><font color="blue" size="36" >Sign-Up</font></center></h2><div class="sign">
+<div class="formm"><center><form name="registration" onsubmit="checkname()" method="post" >
+<table align="center" cellspacing="5px" cellpadding="3px">
+<tr><td>User Name</td><td>
+<input type="text" name="username" id="user"></td></tr>
+<tr><td>Email id</td><td>
+<input type="text" name="mail" id="email" placeholder="name@mail.com"></td></tr>
+<tr><td>Password</td><td>
+<input type="password" name="pass" id="word"></td></tr>
+<tr><td>Retype password</td><td>
+<input type="password" name="pass2" id="con"></td></tr>
+<tr><td>Mobile Number</td><td>
+<input type="text" name="phone" id="mobile" placeholder="0000000000"></td></tr>
+<tr>
+  <td>DOB</td> <td>Date<select name="date" placeholder="select" required>
+        <option name="date" value="0" selected>Select</option>
+    <option name="date" value="1" >1</option>
+    <option name="date" value="2">2</option>
+    <option name="date" value="3">3</option>
+    <option name="date" value="4">4</option>
+    <option name="date" value="5">5</option>
+    <option name="date" value="6">6</option>
+    <option name="date" value="7">7</option>
+    <option name="date" value="8">8</option>
+    <option name="date" value="9">9</option>
+    <option name="date" value="10">10</option>
+    <option name="date" value="11">11</option>
+    <option name="date" value="12">12</option>
+    <option name="date" value="13">13</option>
+    <option name="date" value="14">14</option>
+    <option name="date" value="15">15</option>
+    <option name="date" value="16">16</option>
+    <option name="date" value="17">17</option>
+    <option name="date" value="18">18</option>
+    <option name="date" value="19">19</option>
+    <option name="date" value="20">20</option>
+    <option name="date" value="21">21</option>
+    <option name="date" value="22">22</option>
+    <option name="date" value="23">23</option>
+    <option name="date" value="24">24</option>
+    <option name="date" value="25">25</option>
+    <option name="date" value="26">26</option>
+    <option name="date" value="27">27</option>
+    <option name="date" value="28">28</option>
+    <option name="date" value="29">29</option>
+    <option name="date" value="30">30</option>
+    <option name="date" value="31">31</option>
+    
+    </select>
+    Month
+    <select name="month"  required placeholder="select">
+        <option name="month" value="0" selected>Select</option>
+    <option name="month" value="jan" >January</option>
+    <option name="month" value="feb">February</option>
+    <option name="month" value="march">march</option>
+    <option name="month" value="ap">april</option>
+    <option name="month" value="may">May</option>
+    <option name="month" value="june">june</option>
+    <option name="month" value="july">July</option>
+    <option name="month" value="aug">August</option>
+    <option name="month" value="sep">September</option>
+    <option name="month" value="oct">October</option>
+    <option name="month" value="nov">November</option>
+    <option name="month" value="dec">December</option></select>
+    Year
+    <select name="year"  required aria-placeholder="select">
+        <option name="year" value="0" selected>Select</option>
+    <option name="year" value="2000" >2000</option>
+    <option name="year" value="2001">2001</option>
+    <option name="year" value="2002">2002</option>
+    <option name="year" value="2003">2003</option>
+    <option name="year" value="2004">2004</option>
+    <option name="year" value="2005">2005</option>
+    <option name="year" value="2006">2006</option>
+    <option name="year" value="2007">2007</option>
+    <option name="year" value="2008">2008</option>
+    <option name="year" value="2009">2009</option>
+    <option name="year" value="2010">2010</option>
+    <option name="year" value="2011">2011</option>
+    <option name="year" value="2012">2012</option>
+    <option name="year" value="2013">2013</option></select></td></tr>
+    <tr><td><a href="C:\Users\surab\Desktop\HTML\dob.html">To calculate your age click here</a></td><td></td></tr>
+    <tr><td>
+
+        <tr><td>Location</td>
+            <td><select name="loc"><option name="loc" value="India" selected>India</option>
+            <option name="loc" value="usa">Jammu&Kashmir</option>
+            <option name="loc" value="london">Himanchal pradesh</option>
+            <option name="loc" value="london">Madhya pradesh</option>
+            <option name="loc" value="london">Uttar pradesh</option>
+            <option name="loc" value="london">Arunachal pradesh</option>
+            <option name="loc" value="london">Andhra pradesh</option>
+            <option name="loc" >Assam</option>
+            <option name="loc" >Bihar</option>
+            <option name="loc" >Chhatisgarh</option>
+            <option name="loc" >Goa</option>
+            <option name="loc" >Gujrat</option>
+            <option name="loc" >Haryana</option>
+            <option name="loc" >Jharkhand</option>
+            <option name="loc" >Karnataka</option>
+            <option name="loc" >Kerala</option>
+            <option name="loc" >Maharashtra</option>
+            <option name="loc" >Maipur</option>
+            <option name="loc" >Meghalaya</option>
+            <option name="loc" >Nagaland</option>
+            <option name="loc"> Mizoram<option>
+            <option name="loc" >Odisha</option>
+            <option name="loc" >Punjab</option>
+            <option name="loc" >Rajasthan</option>
+            <option name="loc" >Sikkim</option>
+                <option name="loc" >Tamil Nadu</option>
+                <option name="loc" >Telangana</option>
+                <option name="loc" >Tripura</option>
+                <option name="loc" >Uttarakhand</option>
+                <option name="loc" >West Bengal</option>
+        </select></td></tr>
+            <tr><td>Upload Photo</td>
+            <td><input type="file" accept="image/*" name="pic" value="choose" required><input type="submit" value="Upload"></td>
+            </tr>
+            <tr><td><input type="submit" name="sub" value="Sign-Up" id="jojo"></td><td><input type="reset" name="sub" value="Reset"></td>
+    
+</tr>
+<tr><td></td><td>
+    </table></form></center></div>
+</div>
+</body>
+</html>
